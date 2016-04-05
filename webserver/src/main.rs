@@ -2,6 +2,7 @@
 
 use nickel::{Nickel, Request, Response, HttpRouter, MiddlewareResult};
 use std::collections::HashMap;
+use std::io::Read;
 
 fn root_page <'a> (_: &mut Request, res: Response<'a>) -> MiddlewareResult<'a> {
     let mut data = HashMap::<&str, &str>::new();
@@ -14,15 +15,15 @@ fn root_page <'a> (_: &mut Request, res: Response<'a>) -> MiddlewareResult<'a> {
 }
 
 fn show_result <'a> (req: &mut Request, res: Response<'a>) -> MiddlewareResult<'a> {
-    let mut data = HashMap::<&str, &str>::new();
-
-    let name: &str = req.param("sendname").unwrap();
+    let mut form_data = String::new();
+    req.origin.read_to_string(&mut form_data).unwrap();
+    println!("Got parameters: '{}'", form_data);
 
     //Fill placeholders
-    data.insert("name", name);
+    let mut data = HashMap::new();
     data.insert("page_title", "Response site");
+    data.insert("name", &form_data);
 
-    //Choose template and add data
     res.render("app/views/response.tpl", &data)
 }
 
@@ -31,7 +32,8 @@ fn main() {
 
     //Logging each request
     server.utilize(middleware! { |request|
-        println!("Requested url: {:?}", request.origin.uri);
+        //Log requested URL
+        println!("Requested url: {}", request.origin.uri);
     });
 
     let mut router = Nickel::router();
