@@ -1,5 +1,5 @@
 # Webserver
-Dies ist eine Mini-Webserver-Anwendung, geschrieben in der Sprache **Rust**. Als Framework wird **[nickel](http://nickel.rs/)** eingesetzt, welches ebenfalls komplett in Rust geschrieben wurde. Es wird kein Fehlerhandling o.ä. umgesetzt.
+Dies ist eine Mini-Webserver-Anwendung, geschrieben in der Sprache **Rust**. Zur Unterstützung wird das *crate* **[nickel](http://nickel.rs/)** eingesetzt, welches ebenfalls komplett in Rust geschrieben wurde. Es wird kein Fehlerhandling o.ä. umgesetzt.
 
 Der Webserver wird durch Cargo gestartet:
 
