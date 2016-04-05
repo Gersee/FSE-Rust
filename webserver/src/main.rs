@@ -15,14 +15,18 @@ fn root_page <'a> (_: &mut Request, res: Response<'a>) -> MiddlewareResult<'a> {
 }
 
 fn show_result <'a> (req: &mut Request, res: Response<'a>) -> MiddlewareResult<'a> {
+    //read all parameters as a native String for this example -> later it is better to use .param("paramname") or something like this
     let mut form_data = String::new();
     req.origin.read_to_string(&mut form_data).unwrap();
     println!("Got parameters: '{}'", form_data);
 
+    //Makes a substring - be careful because it's on Bytes not on characters: If you use 👻 it's more than 1 byte
+    let name_slice = &form_data[5..];
+
     //Fill placeholders
     let mut data = HashMap::new();
     data.insert("page_title", "Response site");
-    data.insert("name", &form_data);
+    data.insert("name", &name_slice);
 
     res.render("app/views/response.tpl", &data)
 }
