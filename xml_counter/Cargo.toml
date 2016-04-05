@@ -1,0 +1,12 @@
+[package]
+
+name = "xml_counter"
+version = "0.0.1"
+authors = [ "Jonathan Teige <j.teige@fh-muenster.de>" ]
+
+[[bin]]
+
+name = "xml_counter"
+
+[dependencies]
+xml-rs = "0.3"
