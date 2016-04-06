@@ -3,4 +3,6 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 
 # Enthaltene Beispiele
 
+- *n-queens_problem*: Ein Algorithmus zur Lösung des n-Damen-Problems
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
+- *xml_counter*: Ein Programm für eine exemplarische Verarbeitung eines XML-Dokumentes
