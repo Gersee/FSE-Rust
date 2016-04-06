@@ -7,11 +7,16 @@ use std::io;
 use xml::reader::{EventReader, XmlEvent};
 
 fn main() {
-    println!("Enter keyword to search for:");
+    println!("Enter path of the xml file (e.g. E:/file.xml):");
+    let mut path = String::new();
+    io::stdin().read_line(&mut path)
+    	.expect("Failed to read line");
+    
+    println!("Enter keyword to count elements for:");
     let mut keyword = String::new();
     io::stdin().read_line(&mut keyword)
     	.expect("Failed to read line");
-    let file = File::open("E:/file.xml").unwrap();
+    let file = File::open(path.trim()).unwrap();
     let file = BufReader::new(file);
 
     let parser = EventReader::new(file);
