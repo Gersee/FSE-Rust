@@ -1,4 +1,4 @@
-# Webserver
+# N-queens_problem
 Dies ist eine Implementierung für das n-Damen-Problem mit Rust.
 
 Nach Start der Anwendung werden alle möglichen Brettvarianten einer 8x8 Implementierung ausgegeben.
