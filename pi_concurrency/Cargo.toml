@@ -1,0 +1,9 @@
+[package]
+
+name = "pi_concurrency"
+version = "0.0.1"
+authors = [ "Jonathan Teige <j.teige@fh-muenster.de>" ]
+
+[[bin]]
+
+name = "pi_concurrency"
