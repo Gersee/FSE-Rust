@@ -6,9 +6,9 @@ use std::thread;
 fn main() {
 	
 	// Number of threads for the calculation
-	let thread_number: f64 = 20.0;
+	let thread_number: f64 = 10.0;
 	// Number of subtotals for the calculation
-	let subtotals: f64 = 100000.0;
+	let subtotals: f64 = 1000000.0;
 	// Size of each intervall
 	let intervall: f64 = subtotals / thread_number;
 	// Vector for the threads
@@ -28,7 +28,7 @@ fn main() {
 			return calc(start, end, j, subtotals);	
 		}));
 		
-		println!("Thread {}: Created!", j);	
+		println!("Thread {}: Thread created!", j);	
 	}
 	
 	// Result of the whole calculation	
@@ -53,7 +53,7 @@ fn main() {
 ///
 fn calc(start: i32, end: i32, j: i32, subtotals: f64) -> f64 {
 	
-	println!("Thread {}: Started!", j);	
+	println!("Thread {}: Started calculation!", j);	
 	
 	let dx: f64 = 1 as f64 / subtotals;
 	let mut sum: f64 = 0.0;
@@ -66,6 +66,6 @@ fn calc(start: i32, end: i32, j: i32, subtotals: f64) -> f64 {
 	let sub_result: f64 = dx * sum;
 		
 	println!("Thread {}: Subresult: {}", j, sub_result);
-	println!("Thread {}: Finished!", j);
+	println!("Thread {}: Finished calculation!", j);
 	return sub_result;
 }
