@@ -1,0 +1,6 @@
+[package]
+name = "methodExample"
+version = "0.1.0"
+authors = ["Marc Seeger <marcseeger@gmx.de>"]
+
+[dependencies]
