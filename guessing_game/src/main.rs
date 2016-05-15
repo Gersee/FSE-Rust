@@ -12,7 +12,7 @@ fn main() {
     let mut counter: u32 = 0;
 
     loop {
-        counter = &counter + 1;
+        counter = counter + 1;
         println!("Run #{} - Please input your guess.", counter);
 
         let mut guess = String::new();
@@ -24,7 +24,7 @@ fn main() {
             Ok(num) => num,
             Err(_) => {
                 println!("This was not a number");
-                counter = &counter - 1;
+                counter = counter - 1;
                 continue
             },
         };
