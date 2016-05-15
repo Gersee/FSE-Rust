@@ -17,4 +17,11 @@ fn main() {
     println!("anonymious function: {}", function(i));
     println!("anonymious function: {}", function(i));
     println!("anonymious function: {}", function(i));
+
+    //Example for closures
+    let num = 5;
+    let plus_num = |x: i32| x + num;
+    //num wird von plus_num "geborrowed", eine mutuble Zuweisung "let y = &mut num;" wird nicht kompiliert.
+    
+    println!("Plus closure usage: {}", plus_num(5));
 }
