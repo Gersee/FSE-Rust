@@ -1,11 +1,11 @@
-fn doSomething(x: u32) {
+fn do_something(x: u32) {
     if x > 0 {
         println!("x is {}", x);
-        doSomething(x - 1);
+        do_something(x - 1);
     }
 }
 
 fn main() {
     let number: u32 = 10;
-    doSomething(number);
+    do_something(number);
 }
