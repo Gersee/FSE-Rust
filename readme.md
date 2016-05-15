@@ -11,3 +11,20 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 - *towers_of_hanoi*: Ein Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
 - *xml_counter*: Ein Programm für eine exemplarische Verarbeitung eines XML-Dokumentes
+
+# Useful Links
+
+- [Offizielle Website](https://www.rust-lang.org/)
+- [Rust@Github](https://github.com/rust-lang/rust)
+- [Rust Release Notes](https://github.com/rust-lang/rust/blob/stable/RELEASES.md)
+- [Cargo.io - Crate host](https://crates.io/)
+- [Rust book](https://doc.rust-lang.org/book/)
+- [Rust by example](http://rustbyexample.com/)
+- [Cargo guide](http://doc.crates.io/guide.html)
+- [Rust Syntax index](https://doc.rust-lang.org/book/syntax-index.html)
+- [Rust error handling](http://blog.burntsushi.net/rust-error-handling/)
+- [Rust Compiler Error Index](https://doc.rust-lang.org/error-index.html)
+- [Rustonomicon - Advanced Programming with Rust](https://doc.rust-lang.org/nomicon/)
+- [Rust-Rosetta examples](https://github.com/Hoverbear/rust-rosetta/tree/master/src)
+- [Rust Standard-Library](https://doc.rust-lang.org/std/)
+- [Rust Reference](https://doc.rust-lang.org/reference.html)
