@@ -1,0 +1,6 @@
+[package]
+name = "struct_trait"
+version = "0.1.0"
+authors = ["Marc Seeger <marcseeger@gmx.de>", "Jonathan Teige <j.teige@fh-muenster.de>"]
+
+[dependencies]

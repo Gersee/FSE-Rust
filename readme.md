@@ -8,6 +8,7 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 - *n-queens_problem*: Ein Algorithmus zur Lösung des n-Damen-Problems
 - *pi_concurrency*: Umsetzung eines Multi-Threading-Algorithmus zur Berechnung von Pi
 - *recursion-ecample*: Simpler rekursiver Aufruf
+- *struct_trait*: Beispiel für die Verwendung von Structs und Traits
 - *towers_of_hanoi*: Ein Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
 - *xml_counter*: Ein Programm für eine exemplarische Verarbeitung eines XML-Dokumentes
