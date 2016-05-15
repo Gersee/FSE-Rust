@@ -2,7 +2,7 @@
 struct NamedStruct {
     att_a: i32,
     att_b: i32,
-    att_c: i32,
+    att_c: i32
 }
 
 //Struct mit anonymen Attributen, Ansprache über Position im Struct
