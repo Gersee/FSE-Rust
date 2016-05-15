@@ -1,6 +1,6 @@
 [package]
 name = "method_example"
 version = "0.1.0"
-authors = ["Marc Seeger <marcseeger@gmx.de>"]
+authors = ["Marc Seeger <marcseeger@gmx.de>", "Jonathan Teige <j.teige@fh-muenster.de>"]
 
 [dependencies]

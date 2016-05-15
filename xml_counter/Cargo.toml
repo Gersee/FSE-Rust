@@ -2,7 +2,7 @@
 
 name = "xml_counter"
 version = "0.0.1"
-authors = [ "Jonathan Teige <j.teige@fh-muenster.de>" ]
+authors = ["Marc Seeger <marcseeger@gmx.de>", "Jonathan Teige <j.teige@fh-muenster.de>"]
 
 [[bin]]
 
