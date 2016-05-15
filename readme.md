@@ -19,6 +19,7 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 - [Rust Release Notes](https://github.com/rust-lang/rust/blob/stable/RELEASES.md)
 - [Cargo.io - Crate host](https://crates.io/)
 - [Rust book](https://doc.rust-lang.org/book/)
+- [Rust book auf deutsch](https://rust-lang-de.github.io/rustbook-de/index.html)
 - [Rust by example](http://rustbyexample.com/)
 - [Cargo guide](http://doc.crates.io/guide.html)
 - [Rust Syntax index](https://doc.rust-lang.org/book/syntax-index.html)
