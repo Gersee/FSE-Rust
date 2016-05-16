@@ -1,8 +1,8 @@
 // Define struct for employees
 struct Employee {
-		name: &'static str,
-		age: u32,
-	} 
+	name: &'static str,
+	age: u32,
+} 
 
 fn main() {
 
