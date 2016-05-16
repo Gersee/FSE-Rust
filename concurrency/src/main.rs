@@ -9,30 +9,36 @@ fn main() {
     //open channel to synchronize / communicate
     let (tx, rx) = mpsc::channel();
 
-    //Open 3 threads
-    for i in 0..3 {
+    //Open 6 threads, last number is excluded
+    for i in 0..6 {
         //tupel for data and transmitter
         let (data, tx) = (data.clone(), tx.clone());
         thread::spawn(move || {
+            //map 6 threads to an vector index of 3
+            let mut access = i;
+            if i > 2 {
+                access = i - 3;
+            }
             //Do the things many times
             for k in 0..10000 as i32 {
                 //Access mutex an unwrap result
                 let mut data = data.lock().unwrap();
+
                 //Increment data-index
-                data[i] += 1;
+                data[access] += 1;
                 //print only every 1000 times something out
                 if k.checked_rem(1000).unwrap() == 0 {
-                    println!("1000er run: Data[{}] = {}", i, data[i]);
+                    println!("1000er of thread #{}: Data[{}] = {}", i, access, data[access]);
                 }
             }
 
             //send result - need to get access first, but without mutable
             let data = data.lock().unwrap();
-            tx.send(data[i]);
+            tx.send(data[access]);
         });
     }
 
-    for _ in 0..3 {
+    for _ in 0..6 {
         //Wait for results and print message
         println!("Got result from thread: {}", rx.recv().unwrap());
     }
