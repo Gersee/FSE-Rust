@@ -36,4 +36,5 @@ fn main() {
         //Wait for results and print message
         println!("Got result from thread: {}", rx.recv().unwrap());
     }
+    println!("End application");
 }
