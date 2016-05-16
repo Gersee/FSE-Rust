@@ -7,6 +7,7 @@ Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizien
 
 # Enthaltene Beispiele
 
+- *advanced_documentation*: Aufzeigen von Möglichkeiten der RustDoc-Generierung
 - *automatic_testing*: Durchführung automatischer Tests in Rust
 - *c-integration*: Einbindung einer C-Bibliothek
 - *concurrency*: Nebenläufiges Programm
