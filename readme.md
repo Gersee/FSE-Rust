@@ -8,6 +8,7 @@ Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizien
 # Enthaltene Beispiele
 
 - *automatic_testing*: Durchführung automatischer Tests in Rust
+- *c-integration*: Einbindung einer C-Bibliothek
 - *concurrency*: Nebenläufiges Programm
 - *guessing_game*: Ein Projekt wo eine Zahl zwischen 1 und 100 geraten werden soll
 - *hash_map*: Programm zur exemplarischen Nutzung einer HashMap mit Nutzung der Iteration über ein Array
@@ -17,6 +18,7 @@ Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizien
 - *parsing_main_arguments*: Übergabe von Startparametern
 - *pi_concurrency*: Umsetzung eines Multi-Threading-Algorithmus zur Berechnung von Pi
 - *recursion-ecample*: Simpler rekursiver Aufruf
+- *schwartzian_transform*: Implementierung der Schwartzian-Transformation mit Rust
 - *struct_trait*: Beispiel für die Verwendung von Structs und Traits
 - *towers_of_hanoi*: Ein Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
