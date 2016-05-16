@@ -55,7 +55,7 @@ Nachfolgend finden sich Links zum Thema Rust.
 - [Rust Standard-Library](https://doc.rust-lang.org/std/)
 - [Rust Reference](https://doc.rust-lang.org/reference.html)
 
-## Referenzprojekten
+## Referenzprojekte
 
 - [Rustc - Rust Compiler](https://manishearth.github.io/rust-internals-docs/rustc/)
 - [Rustdoc - Rust Documentation Generator](https://manishearth.github.io/rust-internals-docs/rustdoc/index.html)
