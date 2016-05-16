@@ -18,7 +18,26 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 
 ---
 
-# Useful Links
+# Einige Rust-Begriffe
+
+| Begriff | Bedeutung |
+| ---|---|
+| crates | Vergleichbar mit Libraries |
+| macro | Vergleichbar mit Funktionen - gekennzeichnet durch abschließendes ! - allerdings wird beim Kompilieren keine Sprungadresse sondern der Quellcode wird an der Stelle eingefügt. |
+| moustaches | Bracelets: {} z.B. bei Verwendung als Platzhalter bei Ausgaben |
+| panic! | Beendet mit Nachricht den Thread und löst alle Resourcenbelegungen, bei 1-Thread: Programmende |
+| Rustaceans | Bezeichnung für Rust-Entwickler |
+| Shadowing | Wiederverwendung einer Varaible auch mit anderem Typ sobald die Ursprungsvariable den Scope verlassen hat |
+| Struct | Komplexer Datentyp mit der Möglichkeit einer Methodenimplementierung |
+| Trait | Garantieren Methodenimplementierung eines Structs, Vergleichbar mit Java-Interfaces |
+
+---
+
+# Links
+
+Nachfolgend finden sich Links zum Thema Rust.
+
+## Doku & Tutorials
 
 - [Offizielle Website](https://www.rust-lang.org/)
 - [Rust@Github](https://github.com/rust-lang/rust)
@@ -36,6 +55,31 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 - [Rust Standard-Library](https://doc.rust-lang.org/std/)
 - [Rust Reference](https://doc.rust-lang.org/reference.html)
 
----
+## Referenzprojekten
 
-# Links zu Referenzprojekten
+- [Rustc - Rust Compiler](https://manishearth.github.io/rust-internals-docs/rustc/)
+- [Rustdoc - Rust Documentation Generator](https://manishearth.github.io/rust-internals-docs/rustdoc/index.html)
+- [Cargo.io - Crate host](https://crates.io/)
+- [Google-XI - Editor with rust-Backend](https://github.com/google/xi-editor)
+- [Google hat-backup - Backend-agnostic snapshotting backup system](https://github.com/google/hat-backup)
+- [Servo - Parallel Browser Engine](https://servo.org/)
+- [Skylight - Ein Performance-Test-Framework für Ruby](https://www.skylight.io/)
+- [Nickel - Web Application Framework](http://nickel.rs/)
+- [Piston - Game Engine](https://github.com/PistonDevelopers/piston)
+- [Redox - Betriebssystem](https://github.com/redox-os/redox)
+- [CGMath - Linear Algebra Tool](https://github.com/bjz/cgmath)
+- [iota - Text editor](https://github.com/gchp/iota)
+- [Rust-Q3 - Quake3 like Game](https://github.com/jeaye/q3)
+- [intellij-Rust - Intellij-based IDE for Rust](https://github.com/intellij-rust/intellij-rust)
+- [Serde-RS - Serialized Rust Data Structues](https://github.com/serde-rs/serde)
+- [lettre - SMTP library](https://github.com/lettre/lettre)
+- [rust-FTP - FTP Client](https://github.com/mattnenterprise/rust-ftp)
+- [trust-DNS - DNS Server](https://github.com/bluejekyll/trust-dns)
+- [mysql-simple - mySQL - Client](https://github.com/blackbeam/rust-mysql-simple)
+
+## Rust-Projektsammlungen
+
+- [Awesome-Rust](https://github.com/kud1ing/awesome-rust)
+- [GitHub Trending: Rust](https://github.com/trending/rust)
+- [Crates.io](https://crates.io/)
+- [Rustkit](http://rustkit.io/)
