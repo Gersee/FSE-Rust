@@ -6,6 +6,7 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 # Enthaltene Beispiele
 
 - *guessing_game*: Ein Projekt wo eine Zahl zwischen 1 und 100 geraten werden soll
+- *hash_map*: Programm zur exemplarischen Nutzung einer HashMap mit Nutzung der Iteration über ein Array
 - *lambda*: Beispiel für die Verwendung von Lambda-Expressions
 - *multi_file*: Exemplarische Implementierung des Aufrufs von Funktionen aus mehreren Dateien
 - *n-queens_problem*: Ein Algorithmus zur Lösung des n-Damen-Problems
@@ -22,14 +23,16 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 
 | Begriff | Bedeutung |
 | ---|---|
-| crates | Vergleichbar mit Libraries |
+| crates | Vergleichbar mit Libraries. |
 | macro | Vergleichbar mit Funktionen - gekennzeichnet durch abschließendes ! - allerdings wird beim Kompilieren keine Sprungadresse sondern der Quellcode wird an der Stelle eingefügt. |
-| moustaches | Bracelets: {} z.B. bei Verwendung als Platzhalter bei Ausgaben |
-| panic! | Beendet mit Nachricht den Thread und löst alle Resourcenbelegungen, bei 1-Thread: Programmende |
-| Rustaceans | Bezeichnung für Rust-Entwickler |
-| Shadowing | Wiederverwendung einer Varaible auch mit anderem Typ sobald die Ursprungsvariable den Scope verlassen hat |
-| Struct | Komplexer Datentyp mit der Möglichkeit einer Methodenimplementierung |
-| Trait | Garantieren Methodenimplementierung eines Structs, Vergleichbar mit Java-Interfaces |
+| moustaches | Bracelets: {} z.B. bei Verwendung als Platzhalter bei Ausgaben. |
+| panic! | Beendet mit Nachricht den Thread und löst alle Resourcenbelegungen, bei 1-Thread: Programmende. |
+| Rustaceans | Bezeichnung für Rust-Entwickler. |
+| Shadowing | Wiederverwendung einer Varaible auch mit anderem Typ sobald die Ursprungsvariable den Scope verlassen hat. |
+| snake_case | Im Gegensatz zum CamelCase (Höcker für immer auftretende Großbuchstaben zur Wortabgrenzung) wird bei snake_case alles in Kleinbuchstaben, getrennt durch Unterstrichen (_) geschrieben. Ist der Standard bei Rust, der Compiler warnt bei Nichteinhaltung. Lediglich bei Structs und Traits wird CamelCase gefordert. |
+| Struct | Komplexer Datentyp mit der Möglichkeit einer Methodenimplementierung. |
+| Trait | Garantieren Methodenimplementierung eines Structs, Vergleichbar mit Java-Interfaces. |
+| _ | Else-Zweig einer If-Anweisung, eines match-Statements oder eines Result-Types, z.B. *Err(_) => ...*. |
 
 ---
 
