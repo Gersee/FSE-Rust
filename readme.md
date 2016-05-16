@@ -14,6 +14,7 @@ Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizien
 - *guessing_game*: Ein Projekt wo eine Zahl zwischen 1 und 100 geraten werden soll
 - *hash_map*: Programm zur exemplarischen Nutzung einer HashMap mit Nutzung der Iteration über ein Array
 - *lambda*: Beispiel für die Verwendung von Lambda-Expressions
+- *logging*: Ausgabe von Log-Meldungen durch externes Crate
 - *multi_file*: Exemplarische Implementierung des Aufrufs von Funktionen aus mehreren Dateien
 - *n-queens_problem*: Ein Algorithmus zur Lösung des n-Damen-Problems
 - *parsing_main_arguments*: Übergabe von Startparametern

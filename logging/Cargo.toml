@@ -1,0 +1,8 @@
+[package]
+name = "logging"
+version = "0.1.0"
+authors = ["Marc Seeger <marcseeger@gmx.de>", "Jonathan Teige <j.teige@fh-muenster.de>"]
+
+[dependencies]
+log = "0.3"
+env_logger = "0.3"
