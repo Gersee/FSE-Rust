@@ -14,6 +14,7 @@ Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizien
 - *lambda*: Beispiel für die Verwendung von Lambda-Expressions
 - *multi_file*: Exemplarische Implementierung des Aufrufs von Funktionen aus mehreren Dateien
 - *n-queens_problem*: Ein Algorithmus zur Lösung des n-Damen-Problems
+- *parsing_main_arguments*: Übergabe von Startparametern
 - *pi_concurrency*: Umsetzung eines Multi-Threading-Algorithmus zur Berechnung von Pi
 - *recursion-ecample*: Simpler rekursiver Aufruf
 - *struct_trait*: Beispiel für die Verwendung von Structs und Traits
