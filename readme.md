@@ -5,6 +5,7 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 
 # Enthaltene Beispiele
 
+- *automatic_testing*: Durchführung automatischer Tests in Rust
 - *guessing_game*: Ein Projekt wo eine Zahl zwischen 1 und 100 geraten werden soll
 - *hash_map*: Programm zur exemplarischen Nutzung einer HashMap mit Nutzung der Iteration über ein Array
 - *lambda*: Beispiel für die Verwendung von Lambda-Expressions
