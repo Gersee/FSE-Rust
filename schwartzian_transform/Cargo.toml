@@ -7,3 +7,6 @@ authors = [ "Marc Seeger <marcseeger@gmx.de>", "Jonathan Teige <j.teige@fh-muens
 [[bin]]
 
 name = "schwartzian_transform"
+
+[dependencies]
+rand = "0.3"

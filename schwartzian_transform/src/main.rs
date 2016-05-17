@@ -1,45 +1,79 @@
+extern crate rand;
+use rand::Rng;
+
 // Define struct for employees
+
+#[derive(Copy, Clone)]
 struct Employee {
 	name: &'static str,
-	age: u32,
+	salary: u32,
 }
+
+
 
 fn main() {
 
 	// Create vector
 	let mut in_employees = vec![];
 
-	// Create employees and push them on the vector
-	in_employees.push(Employee {name: "Meier", age: 38});
-	in_employees.push(Employee {name: "Peters", age: 98});
-	in_employees.push(Employee {name: "Baumeister", age: 43});
-	in_employees.push(Employee {name: "Glass", age: 21});
-	in_employees.push(Employee {name: "Stade", age: 46});
-	in_employees.push(Employee {name: "Klein", age: 52});
-	in_employees.push(Employee {name: "Golle", age: 26});
-	in_employees.push(Employee {name: "Helling", age: 61});
-	in_employees.push(Employee {name: "Fischer", age: 32});
-	in_employees.push(Employee {name: "Maug", age: 26});
+	for x in 0..5000 {
+		let rand_number = rand::thread_rng().gen_range(1, 101);
+		let rand_name = format!("Employee {}", rand_number);
+		let rand_salary = rand::thread_rng().gen_range(1, 9000000);
+		in_employees.push(Employee {name: rand_name, salary: rand_salary});
+	}
 
-	// Sort vector by key
-	// |k| k.name --> sort by name
-	// |k| k.age --> sort by age
-	//in_employees.sort_by_key(|k| k.age);
-
-	println!("Schwartzian Transformation");
+	println!("Compare of Schwartzian Transoformation and Rust Sort");
 	println!("");
 
 	// Print vector of employees
 	for x in 0..in_employees.len() {
-		println!("{0},{1}", in_employees[x].name, in_employees[x].age);
+		println!("{0},{1}", in_employees[x].name, in_employees[x].salary);
 	}
+	
+	let out_schwartzian = schwartzian_transformation(in_employees.clone());
+	
+	let out_sort = sort(in_employees.clone());
+	
+	println!("");	
+	println!("Result of Schwartzian Transoformation");
+	println!("");
+	
+	for x in 0..out_schwartzian.len() {
+		println!("{0},{1}", out_schwartzian[x].name, out_schwartzian[x].salary);
+	}
+	
+	println!("");
+	println!("Result of Rust Sort");
+	println!("");
+	
+	for x in 0..out_sort.len() {
+		println!("{0},{1}", out_sort[x].name, out_sort[x].salary);
+	}
+
+	
+}
+
+
+fn sort(in_employees: Vec<Employee>) -> Vec<Employee> {
+	
+	// Sort vector by key
+	// |k| k.name --> sort by name
+	// |k| k.salary --> sort by salary
+	let mut out_employees = in_employees.clone();
+	out_employees.sort_by_key(|k| k.salary);
+	return out_employees;
+	
+}
+
+fn schwartzian_transformation(in_employees: Vec<Employee>) -> Vec<Employee> {
 	
 	// Create temporary vector for transform
 	let mut temp_employees = vec![];
 	
 	// 
 	for x in 0..in_employees.len() {
-		let tuple = (&in_employees[x], in_employees[x].age);
+		let tuple = (in_employees[x].clone(), in_employees[x].salary);
 		temp_employees.push(tuple);
 	}
 	
@@ -51,8 +85,7 @@ fn main() {
 	
 	for x in 0..temp_employees.len() {
 		out_employees.push(temp_employees[x].0);
-		println!("{0}, {1}", out_employees[x].name, out_employees[x].age);
 	}
 	
-	
+	return out_employees;
 }
