@@ -1,13 +1,13 @@
 # Allgemeines
 In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rust](https://www.rust-lang.org/)**. Sie dienen dem Verständnis der Sprache bzw. der Demonstration dessen Möglichkeiten. Diese Beispiele sind entstanden im Rahmen des Master-Moduls *Fortgeschrittenes Software Engineering* an der *[FH Münster](https://www.fh-muenster.de/)*.
 
-Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizienten Code bzw. bestmögliche Code-Eleganz. Die Beispiele dienen dazu, verschiedene Programmierkonstrukte von Rust darzustellen und zu verdeutlichen sowie der Lösungsdarstellung algorithmischer Probleme.
+Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizienten Code bzw. bestmögliche Code-Eleganz. Die Beispiele dienen dazu, verschiedene Programmierkonstrukte von Rust darzustellen und zu verdeutlichen sowie der Lösungsdarstellung algorithmischer Problemstellungen.
 
 Projekte können über das Terminal / die Konsole gestartet werden. Hierfür ist der Ordner der Anwendung zu öffnen, z.B. `cd guessing_game`. Das Projekt kann mit dem Befehl `cargo run` gestartet werden. Bedingung ist selbstverständlich die [Installation von Rust](https://www.rust-lang.org/downloads.html) auf dem Device.
 
 **Wichtig:** Die Beispiel-Programme wurden mit [Atom](https://atom.io/) bearbeitet und über die Konsole / das Terminal erstellt. Ein direkter Import in *Eclipse* ist zum jetzigen Zeitpunkt **nicht** ohne Mehraufwand möglich. Folgender Workaround steht zur Verfügung: Anlegen eines neuen Rust-Projektes in Eclipse und über *Import->Filesystem* das Beispiel-Projekt in das gerade angelegte Eclipse-Rust-Projekt importieren.
 
-Soll ein neues Projekt erstellt werden, so kann `cargo new myProject --bin` verwendet werden. Neben einer grundsätzlichen Projektstruktur und der Anlage von der *main.rs* sowie der *cargo.toml* wird auch ein *Git-Repository* initialisiert, sofern Git auf dem Device verfügbar ist.  
+Soll ein neues Projekt über das Terminal / die Konsole erstellt werden, so kann `cargo new myProject --bin` verwendet werden. Neben einer grundsätzlichen Projektstruktur und der Anlage von der *main.rs* sowie der *cargo.toml* wird auch ein *Git-Repository* initialisiert, sofern Git auf dem Device verfügbar ist.  
 
 Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei dauert der Compilevorgang länger, da *Optimierungen* durchgeführt werden. Das binary-file ist unter `cd target/release` zu finden.
 
@@ -19,8 +19,8 @@ Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei daue
 - *automatic_testing*: Durchführung automatischer Tests in Rust
 - *c-integration*: Einbindung einer C-Bibliothek
 - *concurrency*: Nebenläufiges Programm
-- *guessing_game*: Ein Projekt wo eine Zahl zwischen 1 und 100 geraten werden soll
-- *hash_map*: Programm zur exemplarischen Nutzung einer HashMap mit Nutzung der Iteration über ein Array
+- *guessing_game*: Ein Projekt bei dem eine Zahl zwischen 1 und 100 geraten werden soll
+- *hash_map*: Programm zur exemplarischen Nutzung einer HashMap und eines Arrays
 - *lambda*: Beispiel für die Verwendung von Lambda-Expressions
 - *logging*: Ausgabe von Log-Meldungen durch externes Crate
 - *multi_file*: Exemplarische Implementierung des Aufrufs von Funktionen aus mehreren Dateien
@@ -31,9 +31,9 @@ Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei daue
 - *schwartzian_transform*: Implementierung der Schwartzian-Transformation mit Rust
 - *shadowing*: Exemplarische Darstellung der shadowing-Eigenschaft
 - *struct_trait*: Beispiel für die Verwendung von Structs und Traits
-- *towers_of_hanoi*: Ein Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
+- *towers_of_hanoi*: Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
-- *xml_counter*: Ein Programm für eine exemplarische Verarbeitung eines XML-Dokumentes
+- *xml_counter*: Programm für eine exemplarische Verarbeitung eines XML-Dokumentes
 
 ---
 
@@ -42,11 +42,11 @@ Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei daue
 | Begriff | Bedeutung |
 | ---|---|
 | crates | Vergleichbar mit Libraries. |
-| macro | Vergleichbar mit Funktionen - gekennzeichnet durch abschließendes ! - allerdings wird beim Kompilieren keine Sprungadresse sondern der Quellcode wird an der Stelle eingefügt. |
+| macro | Vergleichbar mit Funktionen - gekennzeichnet durch abschließendes ! - allerdings wird beim Kompilieren keine Sprungadresse sondern der Quellcode eingefügt. |
 | moustaches | Bracelets: {} z.B. bei Verwendung als Platzhalter bei Ausgaben. |
 | panic! | Beendet mit Nachricht den Thread und löst alle Resourcenbelegungen, bei 1-Thread: Programmende. |
 | Rustaceans | Bezeichnung für Rust-Entwickler. |
-| Shadowing | Wiederverwendung einer Varaible auch mit anderem Typ sobald die Ursprungsvariable den Scope verlassen hat. |
+| Shadowing | Wiederverwendung eines Variablennamens in einem inneren Scope ohne die äußere Definition zu verändern. |
 | snake_case | Im Gegensatz zum CamelCase (Höcker für immer auftretende Großbuchstaben zur Wortabgrenzung) wird bei snake_case alles in Kleinbuchstaben, getrennt durch Unterstrichen (_) geschrieben. Ist der Standard bei Rust, der Compiler warnt bei Nichteinhaltung. Lediglich bei Structs und Traits wird CamelCase gefordert. |
 | Struct | Komplexer Datentyp mit der Möglichkeit einer Methodenimplementierung. |
 | Trait | Garantieren Methodenimplementierung eines Structs, Vergleichbar mit Java-Interfaces. |

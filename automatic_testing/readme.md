@@ -1,6 +1,6 @@
 # Automatic Testing
 Beispiel zur automatischen Testdurchführung. Tests müssen annotiert werden. Im *Tests*-Ordner liegen eizelne Testfälle, welche u.a. assert-Statements durchführen und negative Testfälle abdecken. Im *src*-Ordner gibt es einen **Dokumententest**, welcher die Beispiele in den *Doc-Comments* durchführt und testet.
-Kommentare können ausführbare Beispeiel enthalten und werden mit *markdown* formatiert bei Bedarf in HTML-Dokumentationen umgewandelt.
+Kommentare können ausführbare Beispeile enthalten und werden mit *markdown* formatiert bei Bedarf in HTML-Dokumentationen umgewandelt.
 
 Die Ausführung der Tests erfolgt über den Befehl `cargo test` auf der Konsole.
 
