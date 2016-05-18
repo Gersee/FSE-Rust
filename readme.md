@@ -29,6 +29,7 @@ Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei daue
 - *pi_concurrency*: Umsetzung eines Multi-Threading-Algorithmus zur Berechnung von Pi
 - *recursion-ecample*: Simpler rekursiver Aufruf
 - *schwartzian_transform*: Implementierung der Schwartzian-Transformation mit Rust
+- *shadowing*: Exemplarische Darstellung der shadowing-Eigenschaft
 - *struct_trait*: Beispiel für die Verwendung von Structs und Traits
 - *towers_of_hanoi*: Ein Algorithmus zur Lösung der Tower-of-Hanoi-Aufgabe
 - *webserver*: Ein in Rust geschriebener beispielhafter Webserver
