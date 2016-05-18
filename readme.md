@@ -3,6 +3,14 @@ In diesem Repository befinden sich Beispiele, geschrieben mit der Sprache **[Rus
 
 Die hier bereitgestellten Beispiele erheben keinen Anspruch auf maximal effizienten Code bzw. bestmögliche Code-Eleganz. Die Beispiele dienen dazu, verschiedene Programmierkonstrukte von Rust darzustellen und zu verdeutlichen sowie der Lösungsdarstellung algorithmischer Probleme.
 
+Projekte können über das Terminal / die Konsole gestartet werden. Hierfür ist der Ordner der Anwendung zu öffnen, z.B. `cd guessing_game`. Das Projekt kann mit dem Befehl `cargo run` gestartet werden. Bedingung ist selbstverständlich die [Installation von Rust](https://www.rust-lang.org/downloads.html) auf dem Device.
+
+**Wichtig:** Die Beispiel-Programme wurden mit [Atom](https://atom.io/) bearbeitet und über die Konsole / das Terminal erstellt. Ein direkter Import in *Eclipse* ist zum jetzigen Zeitpunkt **nicht** ohne Mehraufwand möglich. Folgender Workaround steht zur Verfügung: Anlegen eines neuen Rust-Projektes in Eclipse und über *Import->Filesystem* das Beispiel-Projekt in das gerade angelegte Eclipse-Rust-Projekt importieren.
+
+Soll ein neues Projekt erstellt werden, so kann `cargo new myProject --bin` verwendet werden. Neben einer grundsätzlichen Projektstruktur und der Anlage von der *main.rs* sowie der *cargo.toml* wird auch ein *Git-Repository* initialisiert, sofern Git auf dem Device verfügbar ist.  
+
+Ein Release-Build kann erstellt werden mit `cargo build --release`. Hierbei dauert der Compilevorgang länger, da *Optimierungen* durchgeführt werden. Das binary-file ist unter `cd target/release` zu finden.
+
 ---
 
 # Enthaltene Beispiele
